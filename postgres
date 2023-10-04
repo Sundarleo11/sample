@@ -1,0 +1,51 @@
+spring.datasource.url=jdbc:postgresql://127.0.0.1:5432/test_db
+spring.datasource.username=root
+spring.datasource.password=root
+
+
+# Hibernate properties
+spring.jpa.database-platform = org.hibernate.dialect.PostgreSQL94Dialect
+spring.jpa.show-sql = false
+#spring.jpa.hibernate.ddl-auto = create-drop
+spring.jpa.hibernate.naming.implicit-strategy = org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+#spring.jpa.hibernate.naming.physical-strategy = org.hibernate.boot.model.naming.PhysicalNamingStrategyJpaCompliantImpl
+spring.jpa.properties.hibernate.format_sql=true
+#spring.datasource.driver-class-name=org.postgresql.Driver
+
+#spring.jpa.show-sql=true
+#spring.datasource.dbcp2.test-while-idle=true
+#spring.datasource.dbcp2.validation-query=select 1
+#spring.jpa.hibernate.naming.implicit-strategy=org.hibernate.boot.model.naming.ImplicitNamingStrategy
+#spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategy
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLDialect
+
+spring.jpa.hibernate.ddl-auto = update
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.6.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
